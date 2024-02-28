@@ -1,0 +1,84 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "Hey", "How are you", "Is anyone there?", "Hello", "Hallo", "How is it going?", "What's up?"],
+         "responses": ["Hello, thanks for visiting", "Good to see you again", "Hi there, how can I help?"]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Bye bye", "See ya", "Good day"],
+         "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon."]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Thank you very much", "Cool", "Very good"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"]
+        },
+        {"tag": "funny",
+         "patterns": ["Tell me a joke!", "Tell me something funny!", "Do you know a joke?", "Do you know an AI joke?"],
+         "responses": ["Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+                       "Why did the large language model cross the road? To get to the other dataset.",
+                       "What do you call a blonde who dyes her hair brown? Artificial Intelligence.",
+                       "The opposite of Artificial Intelligence is...Real Stupidity.",
+                       "They've made a new artificially intelligent Oreo...it's one smart cookie."]
+        },
+        {"tag": "courses",
+         "patterns": ["courses", "Can you recommend some courses?", "Which courses can you recommend?", "Can you tell me something about specific AI courses?", "What do you offer?", "Do you have recommendations for me?", "What can you tell me?", "What do you know?", "What is your purpose?", "Why are you here?"],
+         "responses": ["I have a lot of interessting material to recommend for people who have no clue what artificial intelligence acutually is up to people who are already pretty advanced in AI and machine learning. You wanna see the list of topics to choose from, or rather first want to get excited about AI?", "I have pretty cool stuff for you. You wanna see the list of topics to choose from, or rather first want to get excited about AI?", "Okidoki my friend. I have awesome material for you and the good thing is, it's all for free! You want to get a list of course topics to choose from or rather get first excited about AI?", "You will love what I have to offer. Take a look at my courses I can recommend, they are awesome! Do you wanna get a list of topics to choose from, or I could also show some other AI material, which will make you love AI even more! What's it gonna be?"],
+         "context_set": "topiclist"
+        },
+        {"tag": "topic",
+         "patterns": ["list of topics", "topics", "give me the topics, please", "Give me a list of topics I can choose from", "I want to see a list of topics to choose from", "want to choose from a list"],
+         "responses": ["Here is a list of topics to choose from: \n\n - Math courses: If you are not coming from a technical field I would advice to get to know some math basics first. \n\n - Python courses: Python is the language of choice if it comes to learn AI and machine learning. You should have some basics before you dive into the cool world of AI! \n\n - Machine Learning: This is for people who want to get started with machine learning or who have already some knowledge of AI and ML and want to take the next step. \n\n - Further Material: Here I can recommend some cool videos, newsletters and podcasts which will motivate you to learn AI and keeps you updated of the last trends. \n \n Which topics are you interested in?"],
+         "context_filter": "topiclist"
+        },
+        {"tag": "math",
+         "patterns": ["Math", "math courses", "basic course covering linear algebra, calculus", "I am interested in math courses", "Which math courses can you recommend?", "What do you know about math?"],
+         "responses": ["Alrighty, I guess a bit of math basics doesn't hurt. ;-) You could check our Khan Academy \n \n https://www.khanacademy.org/math/ \n\n Here you find everything what you need to know about mathematics, starting from kindergarden-level up to university-level. In order to understand the machine learning theory I would recommend the following math basics which you also find at Khan Academy: \n\n Linear Algebra: https://www.khanacademy.org/math/linear-algebra \n\n Calculus: https://www.khanacademy.org/math/calculus-1 \n\n Probability and Statistics: https://www.khanacademy.org/math/statistics-probability \n\n Don't worry if you don't want to go throgh a ton of math material. You can also start with machine learning and come back later to the math material if you struggle with math stuff in ML. ;-)"]
+         },
+         {"tag": "python",
+          "patterns": ["python courses", "Can you recommend python courses to me?", "What do you know about python?", "programming", "python, java, C++ and other programming languages"],
+          "responses": ["Good choice! Python is very easy to get into. I'm pretty sure you will have fun learning it. ;-) \n \n Are you a beginner or already intermediate level?"],
+          "context_set": "python level"
+         },
+         {"tag": "beginner python",
+          "patterns": ["beginner", "starter", "beginner python", "beginner level", "I just started with python"],
+          "responses": ["Here are my course recommendations: \n\n Try the python course on kaggle: https://www.kaggle.com/learn/python \n Kaggle is a cool patform to boost your AI skills. Check out the other courses and the competitions. ;-) \n\n You could also try Real Python to get into python programming: https://realpython.com/ "],
+          "context_filter": "python level"
+         },
+         {"tag": "intermediate python",
+          "patterns": ["intermediate python", "intermediate level", "advanced level", "advanced python", "I have already knowledge in python", "I can do python, but want to improve my skills"],
+          "responses": ["If you have already some basics and want to improve your python skills I recommend: \n \n Advanced python tutorial with Patrick Loeber: https://www.youtube.com/watch?v=QLTdOEn79Rc&list=PLqnslRFeH2UqLwzS0AwKDKLrpYBKzLBy2 \n \n Or try this course from GreatLearning, the first 6 hours cover everything you need to know of python for machine learning: https://www.youtube.com/watch?v=RnFGwxJwx-0&t=2597s \n\n Anything else I can help you with? I can tell you a joke if you want. ;-)"],
+          "context_filter": "python level"
+         },
+         {"tag": "Machine Learning",
+          "patterns": ["ML", "machine learning", "Which machine learning courses can you recommend?", "Are there any good AI courses on machine learning?", "Can you recommend some cool machine learning courses?", "machine learning", "artificial intelligence"],
+          "responses": ["Now we are talking! ;-) There is very good free machine learning material out there. Are you interessted in beginner courses for machine learning, or rather intermediate/advanced courses?"],
+          "context_set": "machine learning"
+         },
+         {"tag": "ML Beginner",
+          "patterns": ["beginner courses", "ML for beginners", "machine learning for starters", "machine learning for beginners", "I just started with machine learning, please give me some easy courses to follow"],
+          "responses": ["Alright, let's get started. This courses will get you into the exciting field of machine learning! \n\n If you don't want to loose any time and are eager to apply the stuff directly to some real world data I recommend the kaggle platform with its courses on machine learning. \n\n Kaggle - Intro to Machine Learning: https://www.kaggle.com/learn/intro-to-machine-learning \n Kaggle - Intermediate Machine Learning: https://www.kaggle.com/learn/intermediate-machine-learning \n\n After finishing these courses you are good to go to attend a kaggle competition. Try it out, you will realy improve your ML skills with that! \n\n This course here tought by Andrew Ng I highly recommend to do. You won't find any better instructor for machine learning, I promise! It's technical though, but in my oppinion that's the way to go, after that the world of AI lies at your feet. ;-) \n\n Machine Learning with Andrew: https://www.coursera.org/specializations/machine-learning-introduction?"],
+          "context_filter": "machine learning"
+         },
+         {"tag": "ML Advanced",
+          "patterns": ["intermediate ML courrses", "advanced ML course", "Can you recommend some advanced machine learning course?", "advanced AI courses", "intermediate machine learning courses", "advanced machine learning courses", "intermediate", "advanced"],
+          "responses": ["Okidoki, so you are already next level, cool! Listen up, this courses will boost your ML skills and make you an expert. \n\n This one here is a more practical course. \n Deep Learning with Laurence: https://www.coursera.org/professional-certificates/tensorflow-in-practice? \n\n This one is more technical and takes quiet a bit of time. It's a 5 course series. I recommend taking the last course on sequence models \n Deep Learning with Andrew: https://www.coursera.org/specializations/deep-learning \n\n Alrighty, do you wanna get some recommendations, for instance about some cool AI newsletters, podcasts or inspiring videos?"],
+          "context_filter": "machine learning"
+        },
+        {"tag": "Further Material",
+         "patterns": ["AI material", "more stuff", "Do you have further material on AI and ML?", "I want to get excited about AI", "excited"],
+         "responses": ["Sure, I have some realy cool stuff on AI! All of the material will make you even more excited about AI. Do you want to get some recommendations about videos, newsletters or a podcast tip?"]
+        },
+        {"tag": "Videos",
+         "patterns": ["videos"],
+         "responses": ["This one for example is an introduction to large language modelds from Andrej Karpathy, a guy who really pushes research in deep learning for language processing. \n\n Intro to Large Language Models: https://www.youtube.com/watch?v=zjkBMFhNj_g \n\n Here is a presentation of Yann LeCun, the inventor of convolutional neural networks (CNNs). \n\n From Machine Learning to Autonomous Intelligence: https://www.youtube.com/watch?v=pd0JmT6rYcI \n\n Or try this talk of Andrew Ng about Opportunities in AI. \n\n Opportunities in AI: https://www.youtube.com/watch?v=5p248yoa3oE "]
+        },
+        {"tag": "Newsletter",
+         "patterns": ["newsletter"],
+         "responses": ["Here are two AI newletters I can recommend: \n\n This one is about the latest trends in AI - Alpha Signal: https://alphasignal.ai/ \n and this one about Generative AI: https://newsletter.genai.works/ "]
+        },
+        {"tag": "podcast",
+         "patterns": ["podcast"],
+         "responses": ["This is a cool podcast covering a lot of philosophical topics, but has great discussions about AI, check it out! \n\n https://80000hours.org/topic/world-problems/most-pressing-problems/artificial-intelligence/ \n\n Anything else? I can tell you a joke if you want. ;-)"]
+        }
+   ]
+}
+
