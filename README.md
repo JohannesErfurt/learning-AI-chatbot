@@ -11,8 +11,10 @@ If you are new to the exciting field of machine learning and artificial intellig
 The implementation is inspired by the following artical: https://chatbotsmagazine.com/contextual-chat-bots-with-tensorflow-4391749d0077
 
 The model is implemented with TensorFlow and uses a simple neural network. 
-The gui for running the chatbot is taken from the tutorial by Patrick Loeber: https://www.youtube.com/watch?v=RpWeNzfSUHw&list=PLqnslRFeH2UrFW4AUgn-eY37qOAWQpJyg
-You can find a simpler PyTorch implementation of a chatbot on his github profile: 
+The gui for running the chatbot is taken from the tutorial by Patrick Loeber: 
+https://www.youtube.com/watch?v=RpWeNzfSUHw&list=PLqnslRFeH2UrFW4AUgn-eY37qOAWQpJyg
+
+You can find a simpler PyTorch implementation of a chatbot on his github profile:                           
 https://github.com/patrickloeber/pytorch-chatbot?tab=readme-ov-file
 
 # Usage 
