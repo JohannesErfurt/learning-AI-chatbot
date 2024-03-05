@@ -5,7 +5,7 @@ This chatbot has two purposes:
 If you are learning machine learning and artificial intelligence and want to implement your own NLP project, this one is a good start. All notebooks are well commented. Follow the code and the comments and then customize the datafile for your own chatbot. 
 
 # 2. ML Course Recommendations
-If you are new to the exciting field of machine learning and artificial intelligence and don't know where to start learning, this chatbot will help you. It will give you course recommendations and provide also additional material. 
+If you are new to the exciting field of machine learning and artificial intelligence and don't know how to get started with, this chatbot will help you. It will give you course recommendations and provide also additional material. 
 
 # Implementation
 The implementation is inspired by the following artical: https://chatbotsmagazine.com/contextual-chat-bots-with-tensorflow-4391749d0077
