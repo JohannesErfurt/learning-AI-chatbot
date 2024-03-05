@@ -17,8 +17,19 @@ https://www.youtube.com/watch?v=RpWeNzfSUHw&list=PLqnslRFeH2UrFW4AUgn-eY37qOAWQp
 You can find a simpler PyTorch implementation of a chatbot on his github profile:                           
 https://github.com/patrickloeber/pytorch-chatbot?tab=readme-ov-file
 
+# Installation 
+Please install TensorFlow, NumPy and the NLTK (Natural Language Toolkit) libraries (e.g. with pip install nltk).
+
+Run once 
+```sh
+nltk.download('punkt')
+```
+in the train.ipynb file.
 # Usage 
-Run train.ipynb notbook first for training the model and then run chatbot.ipynb.
+Run train.ipynb notbook first for training the model.
+
+Next run chatbot.ipynb.
+
 You can quite easy customize this chatbot by changing datafile.json. Write your own intents in order to create your own personalized chatbot and rerun the train.ipynb notebook.
 
 Have fun!
